@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <% let primeiroNome = user.nome.split(' ')[0]; %>
+
+    <header class="dashboard-header">
+      <h1>Painel do Usuário</h1>
+      <p>Bem-vindo, <strong><%= primeiroNome %></strong>!</p>
+      <a href="/logout" class="logout-btn">Sair</a>
+    </header>
+
+    <section class="dashboard-grid">
+      <div class="dashboard-card">
+        <h2>Pedidos</h2>
+        <p>12 pendentes</p>
+      </div>
+      <div class="dashboard-card">
+        <h2>Mensagens</h2>
+        <p>5 novas</p>
+      </div>
+      <div class="dashboard-card">
+        <h2>Notificações</h2>
+        <p>3 não lidas</p>
+      </div>
+      <div class="dashboard-card">
+        <h2>Status</h2>
+        <p>Conta ativa</p>
+      </div>
+    </section>
+  </body>
+</html>
