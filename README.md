@@ -11,11 +11,11 @@ Este projeto é um sistema de autenticação básico que inclui login, registro,
 
 <h1>🚀 Funcionalidades</h1>
 
-Login: Autenticação de usuários com email e senha
-Registro: Cadastro de novos usuários (com verificação de email único)
-Dashboard: Página protegida que só pode ser acessada por usuários autenticados
-Logout: Encerra a sessão do usuário
-Sessões: Armazenamento do estado de autenticação usando express-session
+Login: Autenticação de usuários com email e senha<br>
+Registro: Cadastro de novos usuários (com verificação de email único)<br>
+Dashboard: Página protegida que só pode ser acessada por usuários autenticados<br>
+Logout: Encerra a sessão do usuário<br>
+Sessões: Armazenamento do estado de autenticação usando express-session<br>
 
 <h1>🛠️ Tecnologias Utilizadas:</h1>
 
@@ -33,7 +33,7 @@ Frontend
 <li>HTML semântico</li>
 
 
-📂 Estrutura do Projeto
+<h1>📂 Estrutura do Projeto</h1>
 
 <ul>
 <li>├── app.js                # Configuração principal do servidor</li>
