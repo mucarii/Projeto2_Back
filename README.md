@@ -67,9 +67,9 @@ git clone https://github.com/seu-usuario/auth-system.git
 cd auth-system
 Instale as dependências:
 
-
+<h3>Configure o ambiente:</h3>
 npm install
-Configure o ambiente:
+
 
 <h3>Crie um arquivo .env na raiz do projeto com:</h3>
 
