@@ -65,7 +65,7 @@ Sessões: Armazenamento do estado de autenticação usando express-session<br>
 
 git clone https://github.com/mucarii/projeto2-login-session-mvc.git<br>
 cd auth-system<br>
-Instale as dependências:
+
 
 <h3>Configure o ambiente:</h3>
 npm install
