@@ -59,33 +59,33 @@ MongoDB (armazenamento de usuários)
 <li>└── .env                  # Variáveis de ambiente (ex: MONGO_URI)</li>
 </ul>
   
-🔧 Como Executar o Projeto
-Pré-requisitos
-Node.js (v14+)
+<h1>🔧 Como Executar o Projeto</h1>
+<h2>Pré-requisitos</h2>
+<ul>
+<li>Node.js (v14+)</li>
+<li>MongoDB (local ou Atlas)</li>
+<li>npm</li>
 
-MongoDB (local ou Atlas)
+<h2>Passos</h2>
+<h3>Clone o repositório:</h3>
 
-npm ou yarn
 
-Passos
-Clone o repositório:
-
-sh
 git clone https://github.com/seu-usuario/auth-system.git
 cd auth-system
 Instale as dependências:
 
-sh
+
 npm install
 Configure o ambiente:
 
-Crie um arquivo .env na raiz do projeto com:
+<h3>Crie um arquivo .env na raiz do projeto com:</h3>
 
 env
 MONGO_URI=sua_string_de_conexao_mongodb
-Inicie o servidor:
 
-sh
+<h3>Inicie o servidor:</h3>
+
+
 npm start
 O servidor estará rodando em: http://localhost:3000
 
