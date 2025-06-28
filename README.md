@@ -1,59 +1,7 @@
 # Projeto2_Back
 
-<!DOCTYPE html>
+
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Autenticação com Node.js</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            color: #333;
-        }
-        h1, h2 {
-            color: #2c3e50;
-        }
-        h1 {
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-        }
-        h2 {
-            margin-top: 30px;
-            border-left: 4px solid #3498db;
-            padding-left: 10px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-        code {
-            background-color: #f4f4f4;
-            padding: 2px 5px;
-            border-radius: 3px;
-            font-family: monospace;
-        }
-        .file-structure {
-            background-color: #f8f9fa;
-            padding: 15px;
-            border-radius: 5px;
-            font-family: monospace;
-            white-space: pre;
-            overflow-x: auto;
-        }
-        .highlight {
-            background-color: #fffde7;
-            padding: 2px 5px;
-            font-weight: bold;
-        }
-    </style>
-</head>
 <body>
     <h1>📝 Sistema de Autenticação com Node.js, Express e MongoDB</h1>
     <p>Este projeto é um sistema de autenticação básico que inclui <strong>login</strong>, <strong>registro</strong>, <strong>dashboard protegida</strong> e <strong>logout</strong>, utilizando Node.js, Express, MongoDB e sessões.</p>
