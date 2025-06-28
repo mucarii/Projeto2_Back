@@ -43,7 +43,7 @@ Sessões: Armazenamento do estado de autenticação usando express-session<br>
 <li>│   └── authRoutes.js     # Rotas de autenticação (login, registro, logout)</li>
 <li>├── controllers/</li>
 <li>│   └── authController.js # Lógica das rotas (opcional, pode ser mesclada com routes)</li>
-<li>├── public/</li>
+<li>├── public/css</li>
 <li>│   └── style.css         # Estilos CSS</li>
 <li>├── views/                # Templates EJS</li>
 <li>│   ├── login.ejs</li>
