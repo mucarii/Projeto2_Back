@@ -2,10 +2,10 @@
 <h1>Sistema de Autenticação com Node.js, Express e MongoDB</h1>📚 
 
 Integrantes:
-
-Murilo Luiz Calore Ritto — RA: 1997483
-Carlos Renato Alves de Oliveira — RA: 1162934
-
+<ul>
+<li>Carlos Renato Alves de Oliveira — RA: 1162934</li>
+<li>Murilo Luiz Calore Ritto — RA: 1997483</li> 
+</ul>
 
 Este projeto é um sistema de autenticação básico que inclui login, registro, dashboard protegida e logout, utilizando Node.js, Express, MongoDB e sessões.
 
