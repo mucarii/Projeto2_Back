@@ -1,8 +1,5 @@
 # Projeto2_Back
 
-
-<html lang="pt-BR">
-<body>
     <h1>📝 Sistema de Autenticação com Node.js, Express e MongoDB</h1>
     <p>Este projeto é um sistema de autenticação básico que inclui <strong>login</strong>, <strong>registro</strong>, <strong>dashboard protegida</strong> e <strong>logout</strong>, utilizando Node.js, Express, MongoDB e sessões.</p>
 
@@ -81,5 +78,4 @@ cd auth-system</code></pre>
             <p>O servidor estará rodando em: <a href="http://localhost:3000">http://localhost:3000</a>.</p>
         </li>
     </ol>
-</body>
-</html>
+
