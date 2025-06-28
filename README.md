@@ -27,7 +27,7 @@ Sessões: Armazenamento do estado de autenticação usando express-session<br>
 <li>Express-session (gerenciamento de sessões)</li>
 <li>EJS (templates para renderização no servidor)</li>
 <li>MongoDB (armazenamento de usuários)</li>
-Frontend
+<h2>Frontend</h2>
 
 <li>CSS puro para estilização</li>
 <li>HTML semântico</li>
