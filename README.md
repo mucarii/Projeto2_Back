@@ -9,36 +9,29 @@ Integrantes:
 
 Este projeto é um sistema de autenticação básico que inclui login, registro, dashboard protegida e logout, utilizando Node.js, Express, MongoDB e sessões.
 
-🚀 Funcionalidades
+<h1>🚀 Funcionalidades</h1>
+
 Login: Autenticação de usuários com email e senha
-
 Registro: Cadastro de novos usuários (com verificação de email único)
-
 Dashboard: Página protegida que só pode ser acessada por usuários autenticados
-
 Logout: Encerra a sessão do usuário
-
 Sessões: Armazenamento do estado de autenticação usando express-session
 
-🛠️ Tecnologias Utilizadas
-Backend
-Node.js
+<h1>🛠️ Tecnologias Utilizadas:</h1>
 
-Express (roteamento e middlewares)
+<h2>Backend</h2>
 
-Mongoose (ORM para MongoDB)
-
-Express-session (gerenciamento de sessões)
-
-EJS (templates para renderização no servidor)
-
+<li>Node.js</li>
+<li>Express (roteamento e middlewares)</li>
+<li>Mongoose (ORM para MongoDB)</li>
+<li>Express-session (gerenciamento de sessões)</li>
+<li>EJS (templates para renderização no servidor)</li>
+<li>MongoDB (armazenamento de usuários)</li>
 Frontend
-CSS puro para estilização
 
-HTML semântico
+<li>CSS puro para estilização</li>
+<li>HTML semântico</li>
 
-Banco de Dados
-MongoDB (armazenamento de usuários)
 
 📂 Estrutura do Projeto
 
