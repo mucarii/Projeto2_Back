@@ -1,5 +1,5 @@
 
-📚 Sistema de Autenticação com Node.js, Express e MongoDB
+<h1>Sistema de Autenticação com Node.js, Express e MongoDB</h1>📚 
 
 Integrantes:
 
@@ -41,22 +41,24 @@ Banco de Dados
 MongoDB (armazenamento de usuários)
 
 📂 Estrutura do Projeto
-text
-.
-├── app.js                # Configuração principal do servidor
-├── models/
-│   └── User.js           # Modelo do usuário (Mongoose)
-├── routes/
-│   └── authRoutes.js     # Rotas de autenticação (login, registro, logout)
-├── controllers/
-│   └── authController.js # Lógica das rotas (opcional, pode ser mesclada com routes)
-├── public/
-│   └── style.css         # Estilos CSS
-├── views/                # Templates EJS
-│   ├── login.ejs
-│   ├── register.ejs
-│   └── dashboard.ejs
-└── .env                  # Variáveis de ambiente (ex: MONGO_URI)
+
+<ul>
+<li>├── app.js                # Configuração principal do servidor</li>
+<li>├── models/</li>
+<li>│   └── User.js           # Modelo do usuário (Mongoose)</li>
+<li>├── routes/</li>
+<li>│   └── authRoutes.js     # Rotas de autenticação (login, registro, logout)</li>
+<li>├── controllers/</li>
+<li>│   └── authController.js # Lógica das rotas (opcional, pode ser mesclada com routes)</li>
+<li>├── public/</li>
+<li>│   └── style.css         # Estilos CSS</li>
+<li>├── views/                # Templates EJS</li>
+<li>│   ├── login.ejs</li>
+<li>│   ├── register.ejs</li>
+<li>│   └── dashboard.ejs</li>
+<li>└── .env                  # Variáveis de ambiente (ex: MONGO_URI)</li>
+</ul>
+  
 🔧 Como Executar o Projeto
 Pré-requisitos
 Node.js (v14+)
