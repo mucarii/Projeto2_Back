@@ -23,7 +23,6 @@ Sessões: Armazenamento do estado de autenticação usando express-session<br>
 
 <li>Node.js</li>
 <li>Express (roteamento e middlewares)</li>
-<li>Mongoose (ORM para MongoDB)</li>
 <li>Express-session (gerenciamento de sessões)</li>
 <li>EJS (templates para renderização no servidor)</li>
 <li>MongoDB (armazenamento de usuários)</li>
