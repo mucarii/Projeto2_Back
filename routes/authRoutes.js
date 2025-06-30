@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const User = require('../models/User');
+const { connect } = require('../models/db');
 
-// Middleware para proteger a dashboard
+// Middleware de autenticação
 function checkAuth(req, res, next) {
   if (req.session.user) {
     next();
@@ -21,7 +21,8 @@ router.get('/login', (req, res) => {
 
 router.post('/login', async (req, res) => {
   const { email, senha } = req.body;
-  const user = await User.findOne({ email, senha });
+  const db = await connect();
+  const user = await db.collection('users').findOne({ email, senha });
 
   if (!user) {
     return res.render('login', { error: 'Credenciais inválidas' });
@@ -31,6 +32,23 @@ router.post('/login', async (req, res) => {
   res.redirect('/dashboard');
 });
 
+router.get('/register', (req, res) => {
+  res.render('register', { error: null });
+});
+
+router.post('/register', async (req, res) => {
+  const { nome, email, senha } = req.body;
+  const db = await connect();
+  const existingUser = await db.collection('users').findOne({ email });
+
+  if (existingUser) {
+    return res.render('register', { error: 'Email já cadastrado.' });
+  }
+
+  await db.collection('users').insertOne({ nome, email, senha });
+  res.redirect('/login');
+});
+
 router.get('/dashboard', checkAuth, (req, res) => {
   res.render('dashboard', { user: req.session.user });
 });
@@ -38,30 +56,5 @@ router.get('/dashboard', checkAuth, (req, res) => {
 router.get('/logout', (req, res) => {
   req.session.destroy(() => res.redirect('/login'));
 });
-// Página de cadastro
-router.get('/register', (req, res) => {
-  res.render('register', { error: null });
-});
-
-// Registro do usuário
-router.post('/register', async (req, res) => {
-  const { nome, email, senha } = req.body;
-
-  const existingUser = await User.findOne({ email });
-
-  if (existingUser) {
-    return res.render('register', { error: 'Email já cadastrado.' });
-  }
-
-  try {
-    const newUser = new User({ nome, email, senha });
-    await newUser.save();
-    res.redirect('/login');
-  } catch (err) {
-    res.render('register', { error: 'Erro ao registrar. Tente novamente.' });
-  }
-});
-
-
 
 module.exports = router;

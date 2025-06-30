@@ -1,13 +1,10 @@
 require('dotenv').config();
 const express = require('express');
-const mongoose = require('mongoose');
-const session = require('express-session');
 const path = require('path');
+const session = require('express-session');
 const authRoutes = require('./routes/authRoutes');
 
 const app = express();
-
-mongoose.connect(process.env.MONGO_URI);
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
